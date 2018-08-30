@@ -1,0 +1,206 @@
+2018/08/17 03:08:55 Using in-memory storage
+2018/08/17 03:08:55 [SMTP] Binding to address: 0.0.0.0:1025
+2018/08/17 03:08:55 Serving under http://:1080/
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Starting session
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 16 bytes: 'EHLO localhost\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: ESTABLISH] In ESTABLISH state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 21 bytes: '250-Hello localhost\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 16 bytes: '250-PIPELINING\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 35 bytes: 'MAIL FROM:<www-data@9080f5e7a9e1>\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@9080f5e7a9e1>
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@9080f5e7a9e1>'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] In MAIL state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 37 bytes: '250 Sender www-data@9080f5e7a9e1 ok\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] In RCPT state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] Got RCPT command
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 6 bytes: 'DATA\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] Processing line: DATA
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] In RCPT state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: RCPT] Got DATA command, switching to DATA state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 754 bytes: 'To: evanjfarmer@gmail.com\r\nSubject: [evanjfarmer webdev] Password Reset\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 17 Aug 2018 03:37:40 +0000\r\nFrom: WordPress <wordpress@ejfwebdev.local>\r\nMessage-ID: <00db9373290a969b3157ce72aaf38f1b@ejfwebdev.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nSomeone has requested a password reset for the following account:\r\n\r\nSite Name: evanjfarmer webdev\r\n\r\nUsername: evanjames\r\n\r\nIf this was a mistake, just ignore this email and nothing will happen.\r\n\r\nTo reset your password, visit the following address:\r\n\r\n<http://ejfwebdev.local/wp-login.php?action=rp&key=GOfG65rWN2DFl38UtImv&login=evanjames>\r\n\r\n.\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2018/08/17 03:37:40 Parsing Content from string: 'To: evanjfarmer@gmail.com
+Subject: [evanjfarmer webdev] Password Reset
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Fri, 17 Aug 2018 03:37:40 +0000
+From: WordPress <wordpress@ejfwebdev.local>
+Message-ID: <00db9373290a969b3157ce72aaf38f1b@ejfwebdev.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Someone has requested a password reset for the following account:
+
+Site Name: evanjfarmer webdev
+
+Username: evanjames
+
+If this was a mistake, just ignore this email and nothing will happen.
+
+To reset your password, visit the following address:
+
+<http://ejfwebdev.local/wp-login.php?action=rp&key=GOfG65rWN2DFl38UtImv&login=evanjames>
+'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Storing message 88i_sAIMsyNdwrv6ZSKg1lHLfJIoBAWtQJ7gOiOvRu4=@mailhog.example
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 80 bytes: '250 Ok: queued as 88i_sAIMsyNdwrv6ZSKg1lHLfJIoBAWtQJ7gOiOvRu4=@mailhog.example\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Received 6 bytes: 'QUIT\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] Processing line: QUIT
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Sent 9 bytes: '221 Bye\r\n'
+2018/08/17 03:37:40 [SMTP 127.0.0.1:35274] Session ended
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Starting session
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 16 bytes: 'EHLO localhost\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: ESTABLISH] In ESTABLISH state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 21 bytes: '250-Hello localhost\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 16 bytes: '250-PIPELINING\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 35 bytes: 'MAIL FROM:<www-data@9080f5e7a9e1>\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@9080f5e7a9e1>
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@9080f5e7a9e1>'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] In MAIL state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 37 bytes: '250 Sender www-data@9080f5e7a9e1 ok\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] In RCPT state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] Got RCPT command
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 6 bytes: 'DATA\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] Processing line: DATA
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] In RCPT state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: RCPT] Got DATA command, switching to DATA state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 754 bytes: 'To: evanjfarmer@gmail.com\r\nSubject: [evanjfarmer webdev] Password Reset\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 17 Aug 2018 03:41:58 +0000\r\nFrom: WordPress <wordpress@ejfwebdev.local>\r\nMessage-ID: <c5fec7d69778ba694ed0dcfc6f632b0c@ejfwebdev.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nSomeone has requested a password reset for the following account:\r\n\r\nSite Name: evanjfarmer webdev\r\n\r\nUsername: evanjames\r\n\r\nIf this was a mistake, just ignore this email and nothing will happen.\r\n\r\nTo reset your password, visit the following address:\r\n\r\n<http://ejfwebdev.local/wp-login.php?action=rp&key=lX5oQIO7JXnDSF4veGuV&login=evanjames>\r\n\r\n.\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2018/08/17 03:41:58 Parsing Content from string: 'To: evanjfarmer@gmail.com
+Subject: [evanjfarmer webdev] Password Reset
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Fri, 17 Aug 2018 03:41:58 +0000
+From: WordPress <wordpress@ejfwebdev.local>
+Message-ID: <c5fec7d69778ba694ed0dcfc6f632b0c@ejfwebdev.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+Someone has requested a password reset for the following account:
+
+Site Name: evanjfarmer webdev
+
+Username: evanjames
+
+If this was a mistake, just ignore this email and nothing will happen.
+
+To reset your password, visit the following address:
+
+<http://ejfwebdev.local/wp-login.php?action=rp&key=lX5oQIO7JXnDSF4veGuV&login=evanjames>
+'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Storing message SlNcDuX-FEfktMbePe6sGGMl1SktLxS_ROUuULjDOgU=@mailhog.example
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 80 bytes: '250 Ok: queued as SlNcDuX-FEfktMbePe6sGGMl1SktLxS_ROUuULjDOgU=@mailhog.example\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Received 6 bytes: 'QUIT\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] Processing line: QUIT
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Sent 9 bytes: '221 Bye\r\n'
+2018/08/17 03:41:58 [SMTP 127.0.0.1:35320] Session ended
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Starting session
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 16 bytes: 'EHLO localhost\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: ESTABLISH] In ESTABLISH state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 21 bytes: '250-Hello localhost\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 16 bytes: '250-PIPELINING\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 35 bytes: 'MAIL FROM:<www-data@9080f5e7a9e1>\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@9080f5e7a9e1>
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@9080f5e7a9e1>'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] In MAIL state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 37 bytes: '250 Sender www-data@9080f5e7a9e1 ok\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] In RCPT state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] Got RCPT command
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 6 bytes: 'DATA\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] Processing line: DATA
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] In RCPT state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: RCPT] Got DATA command, switching to DATA state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 1024 bytes: 'To: evan@holeyaltered.com\r\nSubject: [Wordfence Alert] ejfwebdev.local Admin Login\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 17 Aug 2018 03:56:15 +0000\r\nFrom: WordPress <wordpress@ejfwebdev.local>\r\nMessage-ID: <70f2fc29d9ead3e776a9f705531e7370@ejfwebdev.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nThis email was sent from your website "evanjfarmer webdev" by the Wordfence plugin at Friday 17th of August 2018 at 03:56:15 AM\r\nThe Wordfence administrative URL for this site is: http://ejfwebdev.local/wp-admin/admin.php?page=Wordfence\r\nA user with username "evanjames" who has administrator access signed in to your WordPress site.\r\nUser IP: 127.0.0.1\r\nUser hostname: localhost\r\n\r\n\r\n	NOTE: You are using the free version of Wordfence. Upgrade today:\r\n - Receive real-time Firewall and Scan engine rule updates for protection as threats emerge\r\n - Real-time IP Blacklist blocks the most malicious IPs from acc'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 901 bytes: 'essing your site\r\n - Country blocking\r\n - Two factor authentication\r\n - IP reputation monitoring\r\n - Advanced comment spam filter\r\n - Schedule scans to run more frequently and at optimal times\r\n - Access to Premium Support\r\n - Discounts for multi-license purchases\r\n\r\nClick here to upgrade to Wordfence Premium:\r\nhttps://www.wordfence.com/zz1/wordfence-signup/\r\n--\r\nTo change your alert options for Wordfence, visit:\r\nhttp://ejfwebdev.local/wp-admin/admin.php?page=Wordfence&subpage=global_options\r\nTo see current Wordfence alerts, visit:\r\nhttp://ejfwebdev.local/wp-admin/admin.php?page=Wordfence\r\n\r\n\r\n\r\n\r\nNo longer an administrator for this site? Click here to stop receiving security alerts: http://ejfwebdev.local/?_wfsf=removeAlertEmail&jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV2YW5AaG9sZXlhbHRlcmVkLmNvbSIsIl9leHAiOjE1MzUwODI5NzV9.s8J9hQ5SuvmKwS2zi_0nJm4Liw5jBhLzcQAWwpW4IFc\r\n\r\n.\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2018/08/17 03:56:15 Parsing Content from string: 'To: evan@holeyaltered.com
+Subject: [Wordfence Alert] ejfwebdev.local Admin Login
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Fri, 17 Aug 2018 03:56:15 +0000
+From: WordPress <wordpress@ejfwebdev.local>
+Message-ID: <70f2fc29d9ead3e776a9f705531e7370@ejfwebdev.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This email was sent from your website "evanjfarmer webdev" by the Wordfence plugin at Friday 17th of August 2018 at 03:56:15 AM
+The Wordfence administrative URL for this site is: http://ejfwebdev.local/wp-admin/admin.php?page=Wordfence
+A user with username "evanjames" who has administrator access signed in to your WordPress site.
+User IP: 127.0.0.1
+User hostname: localhost
+
+
+	NOTE: You are using the free version of Wordfence. Upgrade today:
+ - Receive real-time Firewall and Scan engine rule updates for protection as threats emerge
+ - Real-time IP Blacklist blocks the most malicious IPs from accessing your site
+ - Country blocking
+ - Two factor authentication
+ - IP reputation monitoring
+ - Advanced comment spam filter
+ - Schedule scans to run more frequently and at optimal times
+ - Access to Premium Support
+ - Discounts for multi-license purchases
+
+Click here to upgrade to Wordfence Premium:
+https://www.wordfence.com/zz1/wordfence-signup/
+--
+To change your alert options for Wordfence, visit:
+http://ejfwebdev.local/wp-admin/admin.php?page=Wordfence&subpage=global_options
+To see current Wordfence alerts, visit:
+http://ejfwebdev.local/wp-admin/admin.php?page=Wordfence
+
+
+
+
+No longer an administrator for this site? Click here to stop receiving security alerts: http://ejfwebdev.local/?_wfsf=removeAlertEmail&jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImV2YW5AaG9sZXlhbHRlcmVkLmNvbSIsIl9leHAiOjE1MzUwODI5NzV9.s8J9hQ5SuvmKwS2zi_0nJm4Liw5jBhLzcQAWwpW4IFc
+'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Storing message _oXcfE-kdaoZ9-GpygekHMhIcbujGwnu4Z1qUpn2xDM=@mailhog.example
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 80 bytes: '250 Ok: queued as _oXcfE-kdaoZ9-GpygekHMhIcbujGwnu4Z1qUpn2xDM=@mailhog.example\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Received 6 bytes: 'QUIT\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] Processing line: QUIT
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Sent 9 bytes: '221 Bye\r\n'
+2018/08/17 03:56:15 [SMTP 127.0.0.1:35618] Session ended

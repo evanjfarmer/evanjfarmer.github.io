@@ -1,0 +1,2 @@
+[17-Aug-2018 03:09:36 UTC] PHP Fatal error:  Class 'Requests_Hooks' not found in /app/public/wp-includes/class-wp-http-requests-hooks.php on line 17
+[19-Aug-2018 23:52:30 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 4096 bytes) in /app/public/wp-content/plugins/query-monitor/collectors/db_dupes.php on line 54

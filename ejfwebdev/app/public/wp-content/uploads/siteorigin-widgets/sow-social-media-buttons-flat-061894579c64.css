@@ -1,0 +1,93 @@
+.so-widget-sow-social-media-buttons-flat-061894579c64 .social-media-button-container {
+  zoom: 1;
+  text-align: right;
+  /*
+    &:after {
+        content:"";
+        display:inline-block;
+        width:100%;
+    }
+    */
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .social-media-button-container:before {
+  content: '';
+  display: block;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .social-media-button-container:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media (max-width: 780) {
+  .so-widget-sow-social-media-buttons-flat-061894579c64 .social-media-button-container {
+    text-align: left;
+  }
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter {
+  color: #ffffff !important;
+  background-color: #78bdf1;
+  border: 1px solid #78bdf1;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter:visited,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter:active,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter.ow-button-hover:hover {
+  color: #ffffff;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-twitter.ow-button-hover:hover {
+  background: #8ac6f3;
+  border-bottom-color: #8ac6f3;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github {
+  color: #ffffff !important;
+  background-color: #202021;
+  border: 1px solid #202021;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github:visited,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github:active,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github:hover {
+  color: #ffffff !important;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github.ow-button-hover:hover {
+  color: #ffffff;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-github.ow-button-hover:hover {
+  background: #2a2a2b;
+  border-bottom-color: #2a2a2b;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress {
+  color: #797979 !important;
+  background-color: #222222;
+  border: 1px solid #222222;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress:visited,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress:active,
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress:hover {
+  color: #797979 !important;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress.ow-button-hover:hover {
+  color: #838383;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button-wordpress.ow-button-hover:hover {
+  background: #2c2c2c;
+  border-bottom-color: #2c2c2c;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button {
+  font-size: 1em;
+  padding: 1em 1em;
+  margin: 0.1em 0 0.1em 0.1em;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  border-radius: 1.5em;
+}
+.so-widget-sow-social-media-buttons-flat-061894579c64 .sow-social-media-button .sow-icon-fontawesome {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}

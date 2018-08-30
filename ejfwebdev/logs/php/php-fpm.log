@@ -1,0 +1,3 @@
+[17-Aug-2018 03:08:55] NOTICE: fpm is running, pid 14
+[17-Aug-2018 03:08:55] NOTICE: ready to handle connections
+[17-Aug-2018 03:56:35] WARNING: [pool www] server reached pm.max_children setting (5), consider raising it
